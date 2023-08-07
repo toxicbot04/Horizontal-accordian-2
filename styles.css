@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+
+  width: 80%;
+  height: 50%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 0.5; /* Adjust the default width */
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 1%;
+  box-shadow: 0 20px -1px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+  cursor: pointer;
+}
+
+.box > img {
+  width: 100%; /* Set width to 100% */
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box.open {
+  flex: 2; /* Expand width on click */
+}
+
+.box.open > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Future chnages code (Testing) */
+
+/* .container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* .box {
+  position: relative; /* Add relative positioning for proper absolute positioning 
+  flex: 0.5; /* Adjust the default width 
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  cursor: pointer;
+} */
+
+/* .image-container {
+  position: relative;
+} */
+/* 
+.box > img {
+  width: 100%; /* Set width to 100% 
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+} */
+
+/* .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+  display: none; /* Hide content by default 
+} */
+/* 
+.image-container.open .content {
+  display: block; /* Show content when box is open 
+} */
+
+/* .box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+} */
+
+/* .box.open {
+  flex: 1; /* Expand width on click 
+}
+
+.box.open > img {
+  width: 100%;
+  height: 100%;
+}
+ */
